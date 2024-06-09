@@ -1,7 +1,7 @@
 {
   "name": "FineTab",
   "version": "1.0.0",
-  "description": "Behold a beautiful sreen whenever you create a new tab",
+  "description": "Behold a beautiful screen whenever you create a new tab",
   "main": "index.js",
   "author": "Atolagbe David",
   "license": "MIT",
