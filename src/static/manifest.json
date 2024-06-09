@@ -1,0 +1,29 @@
+{
+  "name": "FineTab",
+  "manifest_version": 3,
+  "description": "Behold a beautiful screen whenever you create a new tab",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  },
+  "action": {
+    "default_title": "Finetab",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
