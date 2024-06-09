@@ -8,16 +8,16 @@
     "48": "icon.png",
     "128": "icon.png"
   },
-  "chrome_url_overrides": {
-    "newtab": "newTab.html"
-  },
   "action": {
     "default_title": "Finetab",
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
   },
   "content_scripts": [
     {

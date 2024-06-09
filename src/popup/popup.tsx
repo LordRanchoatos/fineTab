@@ -6,14 +6,6 @@ const Test = () => {
   return (
     <div>
       <h1 className="text-5xl  bg-green-500">Hello world</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquid
-        accusamus sint omnis reprehenderit quia quos minima voluptates suscipit
-        nulla eveniet sapiente placeat sed, maiores blanditiis dignissimos
-        assumenda nobis enim?
-      </p>
-      {/* <img src="/image" alt="sample image"/> */} //optimised image
-      importation with webpack
     </div>
   );
 };

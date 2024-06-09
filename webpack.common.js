@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     popup: path.resolve('./src/popup/popup.tsx'),
     options: path.resolve('./src/options/options.tsx'),
+    newtab: path.resolve('./src/newtab/newtab.tsx'),
     background: path.resolve('./src/background/background.ts'),
     contentScript: path.resolve('./src/contentScript/contentScript.ts'),
   },
@@ -51,7 +52,7 @@ module.exports = {
         },
       ],
     }),
-    ...getHtmlPlugins(['popup', 'options']),
+    ...getHtmlPlugins(['popup', 'options', 'newtab']),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -70,7 +71,7 @@ function getHtmlPlugins(chunks) {
   return chunks.map(
     (chunk) =>
       new HtmlPlugin({
-        title: 'Reactjs Extension',
+        title: 'Fine Tab',
         filename: `${chunk}.html`,
         chunks: [chunk],
       })
